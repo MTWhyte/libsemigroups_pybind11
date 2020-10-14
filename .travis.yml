@@ -49,5 +49,6 @@ install:
     conda build conda.recipe
     conda install --use-local python_example
   fi
+  pip install packaging
 script:
 - python tests/test.py
